@@ -5,6 +5,8 @@ using UnityEngine;
 public class MazeCellObject : MonoBehaviour
 {
     
+    [SerializeField] private GameObject finishMarkerPrefab;
+    [SerializeField] private Renderer cellRenderer;
     [SerializeField] private GameObject leftWall;
     [SerializeField] private GameObject rightWall;
     [SerializeField] private GameObject frontWall;
@@ -45,16 +47,28 @@ public class MazeCellObject : MonoBehaviour
         
     }
 
-    public void SetAsStart(){
-
-        GetComponent<Renderer>().material.color = Color.green;
-
+    public void SetAsStart()
+    {
+        if (cellRenderer != null)
+            cellRenderer.material.color = Color.green;
     }
 
-    public void SetAsFinish(){
+    public void SetAsFinish()
+    {
+        if (cellRenderer != null)
+            cellRenderer.material.color = Color.red;
 
-        GetComponent<Renderer>().material.color = Color.red;
-        
+        gameObject.tag = "Finish";
+
+        Collider col = GetComponent<Collider>();
+        if (col != null)
+            col.isTrigger = true;
+
+        if (finishMarkerPrefab != null)
+        {
+            Vector3 markerPos = transform.position + new Vector3(0, 1, 0);
+            Instantiate(finishMarkerPrefab, markerPos, Quaternion.identity);
+        }
     }
     
 }

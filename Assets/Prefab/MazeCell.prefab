@@ -742,6 +742,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2413189259533892735}
   - component: {fileID: 6682121932796081097}
+  - component: {fileID: 3265481124183362664}
+  - component: {fileID: 1889198625524357858}
   m_Layer: 0
   m_Name: MazeCell
   m_TagString: Untagged
@@ -782,11 +784,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 701f1f15f3b4e094dbe5c24940d68a64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  finishMarkerPrefab: {fileID: 7745388695993722706, guid: 02a7f3ab8bc6e6a40b34851e1f1dcdb4, type: 3}
+  cellRenderer: {fileID: 5566723570078207991}
   leftWall: {fileID: 6665662210327680304}
   rightWall: {fileID: 595032153633734332}
   frontWall: {fileID: 1069997440536748499}
   backWall: {fileID: 8916995444301704470}
   unvisitedBlock: {fileID: 8803462181373312672}
+--- !u!65 &3265481124183362664
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8161527319317962444}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.5, y: 0.5, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1889198625524357858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8161527319317962444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76856b4d5da68214c94c86306b075805, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skeletonPrefab: {fileID: 6431909301856885566, guid: d7d1475b932688749950b9ef4a3925b9, type: 3}
+  mazeSize: {x: 2, y: 2}
+  mazeOrigin: {x: 0, y: 0, z: 0}
+  skeletonCount: 1
 --- !u!1 &8803462181373312672
 GameObject:
   m_ObjectHideFlags: 0

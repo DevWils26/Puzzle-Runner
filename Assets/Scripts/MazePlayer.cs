@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class MazePlayer : MonoBehaviour
 {
@@ -39,6 +41,47 @@ public class MazePlayer : MonoBehaviour
 
             // Move the player forward in the direction
             transform.position += moveDirection * moveSpeed * Time.deltaTime;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Finish"))
+        {
+            Debug.Log("Level Complete!");
+            CompleteLevel();
+        }
+    }
+
+    private void CompleteLevel()
+    {
+        Debug.Log("Level Complete!");
+
+        // Optional: Stop time or show UI
+        Time.timeScale = 0f;
+
+        // Start coroutine to delay then load next level
+        StartCoroutine(LoadNextLevel());
+    }
+
+    private IEnumerator LoadNextLevel()
+    {
+        yield return new WaitForSecondsRealtime(2f); // Short delay
+
+        // Resume time
+        Time.timeScale = 1f;
+
+        int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+
+        if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
+        {
+            SceneManager.LoadScene(nextSceneIndex);
+        }
+        else
+        {
+            Debug.Log("No more levels! Game over.");
+            // Optional: Show win screen or restart
+            SceneManager.LoadScene(0); // Restart from beginning
         }
     }
 }
