@@ -9,23 +9,38 @@ EditorBuildSettings:
     path: Assets/Scenes/Start Screen.unity
     guid: 43bdac28eb4099d4688a37393318ccf6
   - enabled: 1
-    path: Assets/Scenes/Level_1 Maze.unity
-    guid: 7955f6211ca2c9c4e912e05f7a44043e
+    path: Assets/Scenes/1st Level.unity
+    guid: e4b893cb2eb7a614db424a68023a2f06
   - enabled: 1
-    path: Assets/Scenes/Level_2 Maze.unity
-    guid: a6a90696880414344adabb87ddc7e209
+    path: Assets/Scenes/2nd Level.unity
+    guid: 595bf19206f3b6740a9f4018f4e7f7c2
   - enabled: 1
-    path: Assets/Scenes/Level_3 Maze.unity
-    guid: f0e66d5465f2fef4986c02eab2ed65ae
+    path: Assets/Scenes/3rd Level.unity
+    guid: 2d1a1cd2aabe32647aa02383f71e9aaf
   - enabled: 1
-    path: Assets/Scenes/Level_4 Maze.unity
-    guid: 1cff0147b07a45444a6a51cfce6308ab
+    path: Assets/Scenes/4th Level.unity
+    guid: 76f496e544fafd64aa1ceff4051fe814
   - enabled: 1
-    path: Assets/Scenes/Level_5 Maze.unity
-    guid: d2efc0abbf01a6643a378695dd148ec8
+    path: Assets/Scenes/5th Level.unity
+    guid: 92cd78da83d57ef41b36da4ee2f5a5ea
   - enabled: 1
     path: Assets/Scenes/Game Over Screen.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 0
+    path: Assets/Scenes/Level_1 Maze.unity
+    guid: 7955f6211ca2c9c4e912e05f7a44043e
+  - enabled: 0
+    path: Assets/Scenes/Level_2 Maze.unity
+    guid: a6a90696880414344adabb87ddc7e209
+  - enabled: 0
+    path: Assets/Scenes/Level_3 Maze.unity
+    guid: f0e66d5465f2fef4986c02eab2ed65ae
+  - enabled: 0
+    path: Assets/Scenes/Level_4 Maze.unity
+    guid: 1cff0147b07a45444a6a51cfce6308ab
+  - enabled: 0
+    path: Assets/Scenes/Level_5 Maze.unity
+    guid: d2efc0abbf01a6643a378695dd148ec8
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
