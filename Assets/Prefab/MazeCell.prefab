@@ -743,7 +743,6 @@ GameObject:
   - component: {fileID: 2413189259533892735}
   - component: {fileID: 6682121932796081097}
   - component: {fileID: 3265481124183362664}
-  - component: {fileID: 1889198625524357858}
   m_Layer: 0
   m_Name: MazeCell
   m_TagString: Untagged
@@ -812,22 +811,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.5, y: 0.5, z: 0.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1889198625524357858
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8161527319317962444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76856b4d5da68214c94c86306b075805, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  skeletonPrefab: {fileID: 6431909301856885566, guid: d7d1475b932688749950b9ef4a3925b9, type: 3}
-  mazeSize: {x: 2, y: 2}
-  mazeOrigin: {x: 0, y: 0, z: 0}
-  skeletonCount: 1
 --- !u!1 &8803462181373312672
 GameObject:
   m_ObjectHideFlags: 0
