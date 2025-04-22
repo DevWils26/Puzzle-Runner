@@ -51,8 +51,11 @@ public class SkeletonAI : MonoBehaviour
 
         if (distance <= chaseRange)
         {
-            agent.SetDestination(player.position);
-            animator.SetFloat("Speed", 1f);
+            if (agent.isOnNavMesh)
+            {
+                agent.SetDestination(player.position);
+                animator.SetFloat("Speed", 1f);
+            }
         }
         else
         {

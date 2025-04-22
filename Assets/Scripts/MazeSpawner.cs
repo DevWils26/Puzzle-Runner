@@ -22,7 +22,7 @@ public class MazeSpawner : MonoBehaviour
         {
             int randX = Random.Range(0, mazeWidth);
             int randZ = Random.Range(0, mazeHeight);
-            Vector3 spawnPos = new Vector3(randX * cellSize, 0f, randZ * cellSize);
+            Vector3 spawnPos = new Vector3(randX * cellSize, 0.2f, randZ * cellSize);
 
 
             GameObject prefab = prefabsToSpawn[Random.Range(0, prefabsToSpawn.Length)];

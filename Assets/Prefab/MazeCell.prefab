@@ -138,7 +138,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.2, y: 1, z: 1.2}
+  m_Size: {x: 0.15, y: 0.95, z: 1.15}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &657681082151866859
 GameObject:
@@ -236,6 +236,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8775628238198713956}
   - component: {fileID: 1664408219469167209}
+  - component: {fileID: 5798901608766478201}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -280,6 +281,51 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.2, y: 1, z: 1.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &5798901608766478201
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844078978940368218}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &948117273001370111
 GameObject:
   m_ObjectHideFlags: 0
@@ -418,7 +464,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.2, y: 1, z: 1.2}
+  m_Size: {x: 0.15, y: 0.95, z: 1.15}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2121652790106524411
 GameObject:
@@ -730,7 +776,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.2, y: 1, z: 1.2}
+  m_Size: {x: 0.15, y: 0.95, z: 1.15}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8161527319317962444
 GameObject:
@@ -783,7 +829,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 701f1f15f3b4e094dbe5c24940d68a64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  finishMarkerPrefab: {fileID: 7745388695993722706, guid: 02a7f3ab8bc6e6a40b34851e1f1dcdb4, type: 3}
+  finishMarkerPrefab: {fileID: 3815484038171994269, guid: cf425c5cf9e4dac4a85e345d53d48f17, type: 3}
   cellRenderer: {fileID: 5566723570078207991}
   leftWall: {fileID: 6665662210327680304}
   rightWall: {fileID: 595032153633734332}
@@ -917,5 +963,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.2, y: 1, z: 1.2}
+  m_Size: {x: 0.15, y: 0.95, z: 1.15}
   m_Center: {x: 0, y: 0, z: 0}
